@@ -544,3 +544,11 @@ section{padding:112px 6vw}
   .vibe-preview-stage .cover-img{height:210px}
   .vibe-preview-foot{gap:9px;font-size:9px;letter-spacing:0}
 }
+
+/* Bilingual copy: English is treated as a quiet editorial subtitle. */
+.bi-en{display:block;margin-top:.38em;color:inherit;opacity:.72;font-size:.8em;font-weight:400;letter-spacing:.03em;line-height:1.5}
+.hero-lead .bi-en{font-size:.64em;letter-spacing:.055em}
+.hero-bio .bi-en{font-size:.86em;line-height:1.65}
+.profile-socials{flex-wrap:wrap;row-gap:10px}
+#contact h2 .bi-en{flex:0 0 100%;margin-top:.1em;font-size:.34em;letter-spacing:.08em;line-height:1.4}
+#contact .c-sub .bi-en{font-size:.88em;line-height:1.6}
