@@ -6,8 +6,8 @@
 
  // The archive filters stay in the lower section; only the hero gets motion.
  filters.replaceChildren(...[
-  ['all','全部'],['电商','电商'],['教育','教育'],['HMI','HMI'],
-  ['品牌IP','品牌 IP'],['AIGC','AIGC'],['独立开发','Vibe Coding']
+  ['all','全部 / All'],['电商','电商 / E-commerce'],['教育','教育 / Education'],['HMI','HMI'],
+  ['品牌IP','品牌 IP / Brand & IP'],['AIGC','AIGC'],['独立开发','Vibe Coding']
  ].map(([cat,label])=>{
    const b=document.createElement('button');b.type='button';b.className='fbtn'+(cat==='all'?' on':'');b.dataset.cat=cat;b.textContent=label;b.setAttribute('aria-pressed',String(cat==='all'));return b;
  }));
@@ -16,12 +16,12 @@
  const heroRail=document.createElement('div');
  heroRail.className='hero-rail';
  heroRail.dataset.cardCount=String(entries.length);
- heroRail.setAttribute('aria-label','海报快览，点击单张放大');
+ heroRail.setAttribute('aria-label','海报快览，点击单张放大 / Poster highlights; select one to enlarge');
  top.append(heroRail);
 
  const makeCard=page=>{
    const b=document.createElement('button');b.type='button';b.className='reel-card';
-   b.setAttribute('aria-label',page.title+'，放大查看海报');
+   b.setAttribute('aria-label',page.title+' / '+(page.english||'Poster')+'，放大查看 / Enlarge poster');
    const img=document.createElement('img');
    img.src=page.src;img.alt=page.title;img.draggable=false;img.loading='eager';img.decoding='async';
    img.style.objectPosition=page.position||'50% 50%';
@@ -33,7 +33,7 @@
    return b;
  };
 
- const viewport=document.createElement('div');viewport.className='reel-row';viewport.setAttribute('role','region');viewport.setAttribute('aria-roledescription','轮播');viewport.setAttribute('aria-label','自动滚动的海报快览');
+ const viewport=document.createElement('div');viewport.className='reel-row';viewport.setAttribute('role','region');viewport.setAttribute('aria-roledescription','轮播 / carousel');viewport.setAttribute('aria-label','自动滚动的海报快览 / Auto-scrolling poster highlights');
  const track=document.createElement('div');track.className='reel-track';
  const first=document.createElement('div');first.className='reel-group';
  entries.forEach(page=>first.append(makeCard(page)));
