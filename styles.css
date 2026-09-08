@@ -552,3 +552,26 @@ section{padding:112px 6vw}
 .profile-socials{flex-wrap:wrap;row-gap:10px}
 #contact h2 .bi-en{flex:0 0 100%;margin-top:.1em;font-size:.34em;letter-spacing:.08em;line-height:1.4}
 #contact .c-sub .bi-en{font-size:.88em;line-height:1.6}
+
+/* Full bilingual content: Chinese remains primary, English reads as an editorial subtitle. */
+.sec-sub .bi-en{font-size:.78em;line-height:1.55}
+.work .meta h3{flex-wrap:wrap}
+.work .meta h3 .work-en-title{display:block;flex:0 0 100%;margin:.42em 0 0 17px;color:var(--ink2);font-size:.5em;font-weight:500;letter-spacing:.025em;line-height:1.35}
+.work-desc .bi-en{font-size:.78em;line-height:1.55}
+.work .row{align-items:flex-end;gap:12px}
+.work .row .cat,.work .row .yr{line-height:1.45}
+.vibe-title-row h3{flex-wrap:wrap}
+.vibe-title-row h3 .vibe-en-title{display:block;flex:0 0 100%;margin-top:.28em;color:inherit;font-size:.52em;font-weight:500;letter-spacing:.02em;line-height:1.3;opacity:.66}
+.vibe-caption p .bi-en{font-size:.78em;line-height:1.55}
+.vibe-tags,.vibe-format,.vibe-preview-action{line-height:1.45}
+.letter p .bi-en,.letter .quote .bi-en,.tl-card p .bi-en{font-size:.86em;line-height:1.72}
+.bi-en-inline{display:inline;margin-left:.7em;color:inherit;font-size:.72em;font-weight:500;letter-spacing:.04em;opacity:.62}
+.stat span .bi-en{font-size:.78em;line-height:1.35}
+.tl-card h3 .tl-role-en{display:block;margin-top:.28em;color:inherit;font-size:.55em;font-weight:550;letter-spacing:.035em;line-height:1.35;opacity:.68}
+.tl-card h3 small .bi-en{font-size:.78em;line-height:1.35}
+
+@media (max-width:560px){
+  .work .meta h3 .work-en-title{margin-left:15px;font-size:.48em}
+  .bi-en-inline{display:block;margin:.32em 0 0}
+  .letter p .bi-en,.tl-card p .bi-en{font-size:.84em}
+}
