@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="唐婷婷 · UI Designer · 作品集">
+<title>唐婷婷 · atangtang · 作品集</title>
+<!-- 使用系统中文字体，国内静态部署时不依赖境外字体服务 -->
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="carousel.css?v=20260906-single-poster">
+<link rel="stylesheet" href="vibe-works.css?v=20260907-vibe">
+<link rel="stylesheet" href="seasonal.css">
+</head>
+<body>
+<div class="grain"></div>
+
+<nav id="nav">
+  <a class="logo" href="#top"><span class="logo-mark" aria-hidden="true"></span><span>唐婷婷</span><i>·</i><span class="logo-en">atangtang</span></a>
+  <a class="nl on" href="#top">Home</a>
+  <a class="nl" href="#works">Works</a>
+  <a class="nl" href="#about">About</a>
+  <a class="nl" href="#timeline">Path</a>
+  <a class="nl" href="#contact">Contact</a>
+  <button class="nav-btn" id="preview-btn" title="作品集 PDF 预览">预览整套作品集</button>
+  <button class="nav-btn" id="edit-toggle" title="进入编辑模式">编辑</button>
+  <button id="menu-btn">☰</button>
+</nav>
+<div id="menu-panel">
+  <a href="#top">Home</a><a href="#works">Works</a><a href="#about">About</a><a href="#timeline">Path</a><a href="#contact">Contact</a>
+  <button id="m-preview-btn">预览整套作品集</button>
+  <button id="m-edit-toggle">编辑模式</button>
+</div>
+
+<header class="hero" id="top">
+  <div class="season-scenes" aria-hidden="true">
+    <img class="season-scene active" src="assets/seasons/island-spring.png" alt="" fetchpriority="high">
+    <img class="season-scene" src="assets/seasons/island-summer.png" alt="" decoding="async">
+    <img class="season-scene" src="assets/seasons/island-autumn.png" alt="" decoding="async">
+    <img class="season-scene" src="assets/seasons/island-winter.png" alt="" decoding="async">
+  </div>
+  <div class="season-shade"></div>
+  <div class="hero-inner">
+    <div class="hero-profile rv">
+      <div class="profile-card" id="hero-art">
+        <div id="ipBubble">嗨，我是婷婷 ✦</div>
+        <div class="cover-label">PORTRAIT / 01</div>
+        <div id="ipImg" class="profile-avatar cover-portrait" role="img" aria-label="唐婷婷人物照片">
+          <img src="assets/about-portrait.png" alt="唐婷婷人物照片" decoding="async">
+          <span class="cover-portrait__veil" aria-hidden="true"></span>
+        </div>
+        <h2 class="profile-name">唐婷婷</h2>
+        <p class="profile-role">UI / AI PRODUCT DESIGNER</p>
+        <div class="profile-line"></div>
+        <div class="profile-socials">
+          <a href="#works">小红书</a>
+          <a href="#contact">公众号</a>
+          <a href="#contact">GitHub</a>
+          <a href="#contact">邮箱</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-text">
+      <p class="hero-kicker rv">UI / AI PRODUCT DESIGNER · 2026</p>
+      <h1 class="rv">ATANGTANG<br>PORTFOLIO<span class="dot">.</span></h1>
+      <p class="hero-lead rv" style="transition-delay:.08s">让设计有温度，让想法发生。</p>
+      <div class="hero-btns rv" style="transition-delay:.16s">
+        <a class="cbtn solid" href="#works">查看作品</a>
+        <a class="cbtn ghost" href="#contact">联系我</a>
+      </div>
+      <div class="hero-bio rv" style="transition-delay:.24s">
+        <p>UI 设计 · 品牌 &amp; IP · HMI · AIGC 视觉。把复杂的需求，做成<strong>简单、好看、好用</strong>的东西。</p>
+        <p>一个勤奋、自律、相信一万小时定律的设计师。8 年 UI 设计 · AI 自学工作流 · Vibe Coding · 日语 N1。</p>
+      </div>
+    </div>
+    <svg class="leaf-sprig" viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M60 112C60 84 60 54 60 22"/><path d="M60 74C40 68 27 53 25 35c20 4 33 19 35 39Z"/><path d="M60 58C80 52 93 39 95 21c-20 4-33 19-35 37Z"/><path d="M60 46C51 42 45 34 44 23c9 2 15 11 16 23Z"/></svg>
+    <svg class="hero-wave" viewBox="0 0 1180 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M0 20C98 4 196 4 294 20s196 16 294 0 196-16 294-0 196 16 294 0"/></svg>
+  </div>
+</header>
+
+<section id="works">
+  <div class="sec-head rv">
+    <h2 class="sec-title">作品展示<span class="dot">.</span><small>WORKS</small></h2>
+    <p class="sec-sub">设计作品集与 Vibe Coding 产品实践</p>
+  </div>
+  <div class="divider"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V7"/><path d="M12 15C8.5 14 6 11.5 6 7.5 10 8.5 12 11 12 15Z"/><path d="M12 12c3.5-1 6-3.5 6-7.5-4 1-6 3.5-6 7.5Z"/></svg></div>
+
+      <div class="filters rv" id="filters">
+    <button class="fbtn on" data-cat="all">全部</button>
+    <button class="fbtn" data-cat="电商">电商</button>
+    <button class="fbtn" data-cat="教育">教育</button>
+    <button class="fbtn" data-cat="HMI">HMI</button>
+    <button class="fbtn" data-cat="品牌IP">品牌 IP</button>
+    <button class="fbtn" data-cat="AIGC">AIGC</button>
+    <button class="fbtn" data-cat="独立开发">Vibe Coding</button>
+  </div>
+                                        <div class="works" id="worksGrid">
+    <article class="work rv pdf-work" data-cat="电商" data-slug="pdf-ecommerce-app" data-title="易店园电商 App" data-desc="从产品规范、购物流程到组件设计与年货节运营视觉。" data-year="完整原作" data-gallery='["assets/portfolio-pdf/page-003.jpg","assets/portfolio-pdf/page-004.jpg","assets/portfolio-pdf/page-005.jpg","assets/portfolio-pdf/page-006.jpg","assets/portfolio-pdf/page-007.jpg","assets/portfolio-pdf/page-008.jpg","assets/portfolio-pdf/page-009.jpg","assets/portfolio-pdf/page-010.jpg","assets/portfolio-pdf/page-011.jpg","assets/portfolio-pdf/page-012.jpg","assets/portfolio-pdf/page-013.jpg"]' draggable="false" tabindex="0" role="button" aria-label="易店园电商 App，查看完整 11 页">
+      <button class="work-edit" aria-label="编辑" title="编辑">✎</button>
+      <div class="work-card-inner">
+        <div class="meta"><h3>易店园电商 App</h3><p class="work-desc">从产品规范、购物流程到组件设计与年货节运营视觉。</p>
+          <div class="row"><span class="cat">电商</span><span class="yr">11 页原作 ↗</span></div></div>
+        <div class="cover cover--landscape">
+          <img class="cover-img" src="assets/portfolio-pdf/page-003.jpg" alt="易店园电商 App原始作品封面" width="1920" height="1080" loading="lazy"/>
+          <span class="count-badge">11 页</span>
+        </div>
+      </div>
+    </article>
+    <article class="work rv pdf-work" data-cat="教育" data-slug="pdf-education" data-title="百利天下教育" data-desc="课程、训练与测试流程，以及可视化、图标和活动界面。" data-year="完整原作" data-gallery='["assets/portfolio-pdf/page-014.jpg","assets/portfolio-pdf/page-015.jpg","assets/portfolio-pdf/page-016.jpg","assets/portfolio-pdf/page-017.jpg","assets/portfolio-pdf/page-018.jpg","assets/portfolio-pdf/page-019.jpg","assets/portfolio-pdf/page-020.jpg","assets/portfolio-pdf/page-021.jpg","assets/portfolio-pdf/page-022.jpg","assets/portfolio-pdf/page-023.jpg"]' draggable="false" tabindex="0" role="button" aria-label="百利天下教育，查看完整 10 页">
+      <button class="work-edit" aria-label="编辑" title="编辑">✎</button>
+      <div class="work-card-inner">
+        <div class="meta"><h3>百利天下教育</h3><p class="work-desc">课程、训练与测试流程，以及可视化、图标和活动界面。</p>
+          <div class="row"><span class="cat">教育</span><span class="yr">10 页原作 ↗</span></div></div>
+        <div class="cover cover--landscape">
+          <img class="cover-img" src="assets/portfolio-pdf/page-014.jpg" alt="百利天下教育原始作品封面" width="1920" height="1080" loading="lazy"/>
+          <span class="count-badge">10 页</span>
+        </div>
+      </div>
+    </article>
+    <article class="work rv pdf-work" data-cat="电商" data-slug="pdf-merchant" data-title="易店园商家后台" data-desc="售后管理、筛选表单与运营后台，完整展示组件和信息系统。" data-year="完整原作" data-gallery='["assets/portfolio-pdf/page-024.jpg","assets/portfolio-pdf/page-025.jpg","assets/portfolio-pdf/page-026.jpg","assets/portfolio-pdf/page-027.jpg","assets/portfolio-pdf/page-028.jpg","assets/portfolio-pdf/page-029.jpg","assets/portfolio-pdf/page-030.jpg","assets/portfolio-pdf/page-031.jpg","assets/portfolio-pdf/page-032.jpg","assets/portfolio-pdf/page-033.jpg","assets/portfolio-pdf/page-034.jpg","assets/portfolio-pdf/page-035.jpg","assets/portfolio-pdf/page-036.jpg","assets/portfolio-pdf/page-037.jpg","assets/portfolio-pdf/page-038.jpg"]' draggable="false" tabindex="0" role="button" aria-label="易店园商家后台，查看完整 15 页">
+      <button class="work-edit" aria-label="编辑" title="编辑">✎</button>
+      <div class="work-card-inner">
+        <div class="meta"><h3>易店园商家后台</h3><p class="work-desc">售后管理、筛选表单与运营后台，完整展示组件和信息系统。</p>
+          <div class="row"><span class="cat">电商</span><span class="yr">15 页原作 ↗</span></div></div>
+        <div class="cover cover--landscape">
+          <img class="cover-img" src="assets/portfolio-pdf/page-024.jpg" alt="易店园商家后台原始作品封面" width="1920" height="1080" loading="lazy"/>
+          <span class="count-badge">15 页</span>
+        </div>
+      </div>
+    </article>
+    <article class="work rv pdf-work" data-cat="HMI" data-slug="pdf-hmi" data-title="智行汽车 · 智能座舱" data-desc="智能座舱的仪表、导航、车控、氛围灯与语音助手设计。" data-year="完整原作" data-gallery='["assets/portfolio-pdf/page-039.jpg","assets/portfolio-pdf/page-040.jpg","assets/portfolio-pdf/page-041.jpg","assets/portfolio-pdf/page-042.jpg","assets/portfolio-pdf/page-043.jpg","assets/portfolio-pdf/page-044.jpg","assets/portfolio-pdf/page-045.jpg","assets/portfolio-pdf/page-046.jpg","assets/portfolio-pdf/page-047.jpg"]' draggable="false" tabindex="0" role="button" aria-label="智行汽车 · 智能座舱，查看完整 9 页">
+      <button class="work-edit" aria-label="编辑" title="编辑">✎</button>
+      <div class="work-card-inner">
+        <div class="meta"><h3>智行汽车 · 智能座舱</h3><p class="work-desc">智能座舱的仪表、导航、车控、氛围灯与语音助手设计。</p>
+          <div class="row"><span class="cat">HMI</span><span class="yr">9 页原作 ↗</span></div></div>
+        <div class="cover cover--landscape">
+          <img class="cover-img" src="assets/portfolio-pdf/page-039.jpg" alt="智行汽车 · 智能座舱原始作品封面" width="1920" height="1080" loading="lazy"/>
+          <span class="count-badge">9 页</span>
+        </div>
+      </div>
+    </article>
+    <article class="work rv pdf-work" data-cat="AIGC" data-slug="pdf-aigc" data-title="AIGC 商业海报" data-desc="节日、季节与商业主题的 AIGC 海报作品，保留原作组合排版。" data-year="完整原作" data-gallery='["assets/portfolio-pdf/page-048.jpg","assets/portfolio-pdf/page-049.jpg","assets/portfolio-pdf/page-050.jpg"]' draggable="false" tabindex="0" role="button" aria-label="AIGC 商业海报，查看完整 3 页">
+      <button class="work-edit" aria-label="编辑" title="编辑">✎</button>
+      <div class="work-card-inner">
+        <div class="meta"><h3>AIGC 商业海报</h3><p class="work-desc">节日、季节与商业主题的 AIGC 海报作品，保留原作组合排版。</p>
+          <div class="row"><span class="cat">AIGC</span><span class="yr">3 页原作 ↗</span></div></div>
+        <div class="cover cover--landscape">
+          <img class="cover-img" src="assets/portfolio-pdf/page-048.jpg" alt="AIGC 商业海报原始作品封面" width="1920" height="1080" loading="lazy"/>
+          <span class="count-badge">3 页</span>
+        </div>
+      </div>
+    </article>
+    <article class="work rv pdf-work" data-cat="品牌IP" data-slug="pdf-mia" data-title="MIA · 教育 IP 设计" data-desc="从角色设定、线稿、标志色彩到三视图、动作与服装延展。" data-year="完整原作" data-gallery='["assets/portfolio-pdf/page-051.jpg","assets/portfolio-pdf/page-052.jpg","assets/portfolio-pdf/page-053.jpg","assets/portfolio-pdf/page-054.jpg","assets/portfolio-pdf/page-055.jpg","assets/portfolio-pdf/page-056.jpg","assets/portfolio-pdf/page-057.jpg"]' draggable="false" tabindex="0" role="button" aria-label="MIA · 教育 IP 设计，查看完整 7 页">
+      <button class="work-edit" aria-label="编辑" title="编辑">✎</button>
+      <div class="work-card-inner">
+        <div class="meta"><h3>MIA · 教育 IP 设计</h3><p class="work-desc">从角色设定、线稿、标志色彩到三视图、动作与服装延展。</p>
+          <div class="row"><span class="cat">品牌IP</span><span class="yr">7 页原作 ↗</span></div></div>
+        <div class="cover cover--landscape">
+          <img class="cover-img" src="assets/portfolio-pdf/page-051.jpg" alt="MIA · 教育 IP 设计原始作品封面" width="1920" height="1080" loading="lazy"/>
+          <span class="count-badge">7 页</span>
+        </div>
+      </div>
+    </article>
+    <article class="work rv pdf-work" data-cat="AIGC" data-slug="pdf-mythology" data-title="山海经 · 五神归位" data-desc="东方神话角色的视觉重构，呈现各神兽的完整主题画板。" data-year="完整原作" data-gallery='["assets/portfolio-pdf/page-058.jpg","assets/portfolio-pdf/page-059.jpg","assets/portfolio-pdf/page-060.jpg","assets/portfolio-pdf/page-061.jpg","assets/portfolio-pdf/page-062.jpg"]' draggable="false" tabindex="0" role="button" aria-label="山海经 · 五神归位，查看完整 5 页">
+      <button class="work-edit" aria-label="编辑" title="编辑">✎</button>
+      <div class="work-card-inner">
+        <div class="meta"><h3>山海经 · 五神归位</h3><p class="work-desc">东方神话角色的视觉重构，呈现各神兽的完整主题画板。</p>
+          <div class="row"><span class="cat">AIGC</span><span class="yr">5 页原作 ↗</span></div></div>
+        <div class="cover cover--landscape">
+          <img class="cover-img" src="assets/portfolio-pdf/page-058.jpg" alt="山海经 · 五神归位原始作品封面" width="1920" height="1080" loading="lazy"/>
+          <span class="count-badge">5 页</span>
+        </div>
+      </div>
+    </article>
+  </div>
+  <div class="vibe-collection" id="vibeCollection" aria-label="Vibe Coding 产品">
+    <div class="vibe-collection-heading">
+      <div class="vibe-heading-copy"><h3>Vibe Coding</h3><span>WEB · MOBILE · HTML TOOLS</span></div>
+      <button type="button" class="vibe-edit-entry" id="vibe-edit-entry">✎ 编辑内容</button>
+    </div>
+    <div class="works vibe-grid" id="vibeGrid">
+      <article class="work rv vibe-work" data-cat="独立开发" data-slug="vibe-yicheng-yijuan" data-vibe-title="一城一卷" data-vibe-tags="城市漫游 / 照片入画" data-vibe-desc="选择城市与地标，把旅行照片融入国风长卷。" data-vibe-url="https://yicheng-yijuan.touteitei68.chatgpt.site" data-vibe-format="移动端 · H5" data-vibe-layout="mobile" data-vibe-tint="#533329" data-vibe-preview="assets/vibe/yicheng-yijuan.jpg" data-vibe-capture-width="214.2857%">
+        <button class="vibe-edit-btn" type="button" aria-label="编辑 一城一卷" title="编辑">✎ 编辑</button>
+        <a class="vibe-project" href="https://yicheng-yijuan.touteitei68.chatgpt.site" target="_blank" rel="noopener noreferrer" aria-label="打开 一城一卷，在新标签页体验">
+          <div class="vibe-stage vibe-stage--mobile" style="--vibe-tint:#533329">
+            <span class="vibe-format">移动端 · H5</span>
+            <div class="vibe-empty-copy" hidden><b>＋</b><span>上传一张页面预览</span><small>点击编辑内容添加</small></div>
+            <div class="vibe-device vibe-device--mobile">
+              <div class="vibe-chrome" aria-hidden="true"><i></i><i></i><i></i><span></span></div>
+              <div class="vibe-screen" style="--capture-width:214.2857%">
+                <img class="vibe-capture" src="assets/vibe/yicheng-yijuan.jpg" width="1200" height="750" alt="一城一卷真实首页预览" loading="lazy"/>
+              </div>
+            </div>
+            <span class="vibe-preview-action">打开体验 ↗</span>
+          </div>
+          <div class="vibe-caption"><span class="vibe-tags">城市漫游 / 照片入画</span><div class="vibe-title-row"><h3>一城一卷</h3><span aria-hidden="true">↗</span></div><p>选择城市与地标，把旅行照片融入国风长卷。</p></div>
+        </a>
+      </article>
+      <article class="work rv vibe-work" data-cat="独立开发" data-slug="vibe-nospend-virtual-delivery" data-vibe-title="No Spend" data-vibe-tags="虚拟点单 / 省钱记录" data-vibe-desc="用虚拟点单回应想吃的念头，记录忍住下单省下的钱。" data-vibe-url="https://nospend-virtual-delivery.touteitei68.chatgpt.site" data-vibe-format="移动端 · Web App" data-vibe-layout="mobile" data-vibe-tint="#776a35" data-vibe-preview="assets/vibe/nospend-virtual-delivery.jpg" data-vibe-capture-width="279.0698%">
+        <button class="vibe-edit-btn" type="button" aria-label="编辑 No Spend" title="编辑">✎ 编辑</button>
+        <a class="vibe-project" href="https://nospend-virtual-delivery.touteitei68.chatgpt.site" target="_blank" rel="noopener noreferrer" aria-label="打开 No Spend，在新标签页体验">
+          <div class="vibe-stage vibe-stage--mobile" style="--vibe-tint:#776a35">
+            <span class="vibe-format">移动端 · Web App</span>
+            <div class="vibe-empty-copy" hidden><b>＋</b><span>上传一张页面预览</span><small>点击编辑内容添加</small></div>
+            <div class="vibe-device vibe-device--mobile">
+              <div class="vibe-chrome" aria-hidden="true"><i></i><i></i><i></i><span></span></div>
+              <div class="vibe-screen" style="--capture-width:279.0698%">
+                <img class="vibe-capture" src="assets/vibe/nospend-virtual-delivery.jpg" width="1200" height="750" alt="No Spend真实首页预览" loading="lazy"/>
+              </div>
+            </div>
+            <span class="vibe-preview-action">打开体验 ↗</span>
+          </div>
+          <div class="vibe-caption"><span class="vibe-tags">虚拟点单 / 省钱记录</span><div class="vibe-title-row"><h3>No Spend</h3><span aria-hidden="true">↗</span></div><p>用虚拟点单回应想吃的念头，记录忍住下单省下的钱。</p></div>
+        </a>
+      </article>
+      <article class="work rv vibe-work" data-cat="独立开发" data-slug="vibe-tangtang-coffee-lab" data-vibe-title="糖糖咖啡实验室" data-vibe-tags="配方探索 / 咖啡 DIY" data-vibe-desc="选择咖啡配方，调整风味，配出自己的那一杯。" data-vibe-url="https://tangtang-coffee-lab.touteitei68.chatgpt.site" data-vibe-format="网页 / 移动端" data-vibe-layout="desktop" data-vibe-tint="#756459" data-vibe-preview="assets/vibe/tangtang-coffee-lab.jpg" data-vibe-capture-width="100%">
+        <button class="vibe-edit-btn" type="button" aria-label="编辑 糖糖咖啡实验室" title="编辑">✎ 编辑</button>
+        <a class="vibe-project" href="https://tangtang-coffee-lab.touteitei68.chatgpt.site" target="_blank" rel="noopener noreferrer" aria-label="打开 糖糖咖啡实验室，在新标签页体验">
+          <div class="vibe-stage vibe-stage--desktop" style="--vibe-tint:#756459">
+            <span class="vibe-format">网页 / 移动端</span>
+            <div class="vibe-empty-copy" hidden><b>＋</b><span>上传一张页面预览</span><small>点击编辑内容添加</small></div>
+            <div class="vibe-device vibe-device--desktop">
+              <div class="vibe-chrome" aria-hidden="true"><i></i><i></i><i></i><span>糖糖咖啡实验室</span></div>
+              <div class="vibe-screen" style="--capture-width:100.0000%">
+                <img class="vibe-capture" src="assets/vibe/tangtang-coffee-lab.jpg" width="1200" height="750" alt="糖糖咖啡实验室真实首页预览" loading="lazy"/>
+              </div>
+            </div>
+            <span class="vibe-preview-action">打开体验 ↗</span>
+          </div>
+          <div class="vibe-caption"><span class="vibe-tags">配方探索 / 咖啡 DIY</span><div class="vibe-title-row"><h3>糖糖咖啡实验室</h3><span aria-hidden="true">↗</span></div><p>选择咖啡配方，调整风味，配出自己的那一杯。</p></div>
+        </a>
+      </article>
+      <article class="work rv vibe-work" data-cat="独立开发" data-slug="vibe-wenling-pattern-lab" data-vibe-title="纹灵" data-vibe-tags="传统纹样 / 创意定制" data-vibe-desc="从纹样选取、配色到寓意组合与载体预览。" data-vibe-url="https://wenling-pattern-lab.touteitei68.chatgpt.site" data-vibe-format="网页端" data-vibe-layout="desktop" data-vibe-tint="#566154" data-vibe-preview="assets/vibe/wenling-pattern-lab.jpg" data-vibe-capture-width="100%">
+        <button class="vibe-edit-btn" type="button" aria-label="编辑 纹灵" title="编辑">✎ 编辑</button>
+        <a class="vibe-project" href="https://wenling-pattern-lab.touteitei68.chatgpt.site" target="_blank" rel="noopener noreferrer" aria-label="打开 纹灵，在新标签页体验">
+          <div class="vibe-stage vibe-stage--desktop" style="--vibe-tint:#566154">
+            <span class="vibe-format">网页端</span>
+            <div class="vibe-empty-copy" hidden><b>＋</b><span>上传一张页面预览</span><small>点击编辑内容添加</small></div>
+            <div class="vibe-device vibe-device--desktop">
+              <div class="vibe-chrome" aria-hidden="true"><i></i><i></i><i></i><span>纹灵</span></div>
+              <div class="vibe-screen" style="--capture-width:100.0000%">
+                <img class="vibe-capture" src="assets/vibe/wenling-pattern-lab.jpg" width="1200" height="750" alt="纹灵真实首页预览" loading="lazy"/>
+              </div>
+            </div>
+            <span class="vibe-preview-action">打开体验 ↗</span>
+          </div>
+          <div class="vibe-caption"><span class="vibe-tags">传统纹样 / 创意定制</span><div class="vibe-title-row"><h3>纹灵</h3><span aria-hidden="true">↗</span></div><p>从纹样选取、配色到寓意组合与载体预览。</p></div>
+        </a>
+      </article>
+      <article class="work rv vibe-work vibe-work--empty" data-cat="独立开发" data-slug="vibe-slot-01" data-vibe-title="Vibe Coding 项目 01" data-vibe-tags="移动端 / 小工具" data-vibe-desc="在这里填写你的移动端小工具简介。" data-vibe-url="" data-vibe-format="移动端 · 待添加" data-vibe-layout="mobile" data-vibe-tint="#52606a" data-vibe-preview="" data-vibe-capture-width="100%">
+        <button class="vibe-edit-btn" type="button" aria-label="编辑 Vibe Coding 项目 01" title="编辑">✎ 编辑</button>
+        <a class="vibe-project" href="#" aria-label="编辑 Vibe Coding 项目 01">
+          <div class="vibe-stage vibe-stage--mobile vibe-stage--empty" style="--vibe-tint:#52606a">
+            <span class="vibe-format">移动端 · 待添加</span>
+            <div class="vibe-empty-copy"><b>＋</b><span>上传一张页面预览</span><small>点击编辑内容添加</small></div>
+            <div class="vibe-device vibe-device--mobile" hidden><div class="vibe-screen"><img class="vibe-capture" alt="" loading="lazy"></div></div>
+            <span class="vibe-preview-action">先编辑内容</span>
+          </div>
+          <div class="vibe-caption"><span class="vibe-tags">移动端 / 小工具</span><div class="vibe-title-row"><h3>Vibe Coding 项目 01</h3><span aria-hidden="true">＋</span></div><p>在这里填写你的移动端小工具简介。</p></div>
+        </a>
+      </article>
+      <article class="work rv vibe-work vibe-work--empty" data-cat="独立开发" data-slug="vibe-slot-02" data-vibe-title="Vibe Coding 项目 02" data-vibe-tags="网页端 / HTML 小工具" data-vibe-desc="在这里填写你的网页端或 HTML 小工具简介。" data-vibe-url="" data-vibe-format="网页端 · 待添加" data-vibe-layout="desktop" data-vibe-tint="#465b75" data-vibe-preview="" data-vibe-capture-width="100%">
+        <button class="vibe-edit-btn" type="button" aria-label="编辑 Vibe Coding 项目 02" title="编辑">✎ 编辑</button>
+        <a class="vibe-project" href="#" aria-label="编辑 Vibe Coding 项目 02">
+          <div class="vibe-stage vibe-stage--desktop vibe-stage--empty" style="--vibe-tint:#465b75">
+            <span class="vibe-format">网页端 · 待添加</span>
+            <div class="vibe-empty-copy"><b>＋</b><span>上传一张页面预览</span><small>点击编辑内容添加</small></div>
+            <div class="vibe-device vibe-device--desktop" hidden><div class="vibe-screen"><img class="vibe-capture" alt="" loading="lazy"></div></div>
+            <span class="vibe-preview-action">先编辑内容</span>
+          </div>
+          <div class="vibe-caption"><span class="vibe-tags">网页端 / HTML 小工具</span><div class="vibe-title-row"><h3>Vibe Coding 项目 02</h3><span aria-hidden="true">＋</span></div><p>在这里填写你的网页端或 HTML 小工具简介。</p></div>
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+<section id="about">
+  <div class="sec-head rv">
+    <h2 class="sec-title">关于我<span class="dot">.</span><small>ABOUT</small></h2>
+    <p class="sec-sub">一页信纸，就是我的简历</p>
+  </div>
+  <div class="divider"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V7"/><path d="M12 15C8.5 14 6 11.5 6 7.5 10 8.5 12 11 12 15Z"/><path d="M12 12c3.5-1 6-3.5 6-7.5-4 1-6 3.5-6 7.5Z"/></svg></div>
+  <div class="letter rv">
+    <div class="letter-head"><span>RESUME · UI DESIGNER</span><span>大连 · 东北大学（日本）交换</span></div>
+    <p>你好，我是唐婷婷，日语专业出身，做了 8 年 UI 设计。最初在留学机构做日语文案翻译，后来靠自学转向 UI 设计，再把 AI 接进自己的工作流。</p>
+    <p>从产品 0 到 1、设计系统，到品牌 IP、运营物料，我都上手。这两年把 AI 接进了自己的工作流——需求分析、插画、H5、原型验证，也自己用 Vibe Coding 做小产品：塔罗测试、记账工具、拼豆图案工具，从需求到交付一个人走完。</p>
+    <p class="dim">朋友说我温和，聊起专业又很较真。我觉得设计师就该这样：手要软，标准要硬。</p>
+    <div class="quote">「我向往的自由是通过勤奋和努力实现的更广阔的人生。我相信一万小时定律，从来不相信天上掉馅饼的灵感和坐等的成就。我要做一个自由又自律的人，靠势必实现的决心认真地活着。」—— 山本耀司</div>
+    <div class="sub-h">我会做的事</div>
+    <div class="chips">
+      <span class="chip">UI / UX 设计</span><span class="chip">HMI 智能座舱</span><span class="chip">品牌 &amp; IP 形象</span><span class="chip">AIGC 视觉</span><span class="chip">设计系统</span><span class="chip">H5 / 运营物料</span><span class="chip">Vibe Coding</span><span class="chip">AI 工作流</span>
+    </div>
+    <div class="sub-h">常用工具</div>
+    <div class="chips">
+      <span class="chip">Figma</span><span class="chip">PS / AI</span><span class="chip">Cursor / Trae / Codex</span><span class="chip">千问 / WorkBuddy</span><span class="chip">即梦 / GPT / Loveart</span>
+    </div>
+    <div class="sub-h">一些数字</div>
+    <div class="stats">
+      <div class="stat"><b>8</b><span>年设计经验</span></div>
+      <div class="stat"><b>6+</b><span>条产品线</span></div>
+      <div class="stat"><b>3</b><span>个完整 IP（MIA / 卡皮巴拉 / Dora）</span></div>
+      <div class="stat"><b>N1</b><span>日语一级 · 英语六级</span></div>
+    </div>
+    <div class="sub-h">教育与路径</div>
+    <p class="dim">大连理工大学 · 日语专业本科 ｜ 东北大学（日本）· 交换留学</p>
+    <p class="dim">UI / AI 产品设计 · 自学转型</p>
+  </div>
+</section>
+
+<!-- 经历 -->
+<section id="timeline">
+  <div class="sec-head rv">
+    <h2 class="sec-title">经历<span class="dot">.</span><small>PATH</small></h2>
+    <p class="sec-sub">2006 —— 2026</p>
+  </div>
+  <div class="divider"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V7"/><path d="M12 15C8.5 14 6 11.5 6 7.5 10 8.5 12 11 12 15Z"/><path d="M12 12c3.5-1 6-3.5 6-7.5-4 1-6 3.5-6 7.5Z"/></svg></div>
+  <ol class="tl rv">
+    <li><span class="tl-dot"></span><div class="tl-card">
+      <span class="tl-time">2023.06 —— 2026.08</span>
+      <h3>设计师<small>大连睿新医疗健康管理有限公司</small></h3>
+      <p>易店园电商 App、云舍风土 App 等多条产品线 UI；睿康口腔卡皮巴拉 IP 与周边；品牌营销物料与线下 AI 画作展出。</p>
+    </div></li>
+    <li><span class="tl-dot"></span><div class="tl-card">
+      <span class="tl-time">2020.06 —— 2023.06</span>
+      <h3>HMI 设计师<small>车行天下科技有限公司</small></h3>
+      <p>中控、副驾、信息娱乐屏全模块设计；导航高保真原型与 Demo；参与视觉规范与组件库搭建，跟车型项目落地。</p>
+    </div></li>
+    <li><span class="tl-dot"></span><div class="tl-card">
+      <span class="tl-time">2006 —— 2018</span>
+      <h3>日语文案翻译<small>北京百利天下教育 · 留学机构</small></h3>
+      <p>负责留学机构日语文案的撰写、翻译与校对，支持留学项目的内容沟通与宣传。</p>
+    </div></li>
+    <li><span class="tl-dot"></span><div class="tl-card">
+      <span class="tl-time">UNDERGRADUATE</span>
+      <h3>日语专业 · 本科<small>大连理工大学 → 东北大学（日本）交换</small></h3>
+      <p>日语专业本科；UI 设计与 AI 工作流均为自学。</p>
+    </div></li>
+  </ol>
+</section>
+
+<!-- 联系 -->
+<footer id="contact">
+  <h2 class="rv">有想一起做的东西吗<span class="dot">.</span><br>来聊，<b>把它做出来</b><span class="dot">.</span></h2>
+  <p class="c-sub rv" style="transition-delay:.1s">工作机会、合作邀约，或者只是打个招呼，都欢迎。<br>微信最快，电话也行。</p>
+  <div class="c-btns rv" style="transition-delay:.18s">
+    <button class="cbtn solid" id="wx-btn" data-copy="touteitei8">WeChat：touteitei8（点击复制）</button>
+    <button class="cbtn ghost" id="tel-btn" data-copy="13897909148">138 9790 9148（点击复制）</button>
+  </div>
+  <div class="socials rv" style="transition-delay:.24s">
+    <a href="https://www.xiaohongshu.com/user/profile/5c5af520000000001800b579" target="_blank" rel="noopener">小红书 ↗</a>
+    <a href="https://github.com/touteitei888-rgb" target="_blank" rel="noopener">GitHub ↗</a>
+  </div>
+  <p class="foot-note rv" style="transition-delay:.26s">© 2026 唐婷婷 · atangtang · DESIGN &amp; CREATIVE EXPLORATION</p>
+</footer>
+
+<div id="toast"></div>
+
+
+<!-- Lightbox -->
+<div id="lb" class="lb" role="dialog" aria-modal="true" aria-labelledby="lbTitle" aria-hidden="true" inert>
+  <button class="lb-close" aria-label="关闭">×</button>
+  <button class="lb-prev" aria-label="上一张">‹</button>
+  <button class="lb-next" aria-label="下一张">›</button>
+  <div class="exhibit">
+    <div class="exhibit-copy"><span class="exhibit-label">SELECTED WORK</span><h2 id="lbTitle"></h2><p id="lbEnglish"></p><div class="exhibit-rule"></div><h3 id="lbPageTitle"></h3><p id="lbDescription"></p><span id="lbConcept"></span></div>
+    <div class="lb-stage" tabindex="0" aria-label="作品展示，左右滑动翻页"><img id="lbImg" src="" alt=""/><span id="lbError" hidden>图片暂时无法加载，请尝试下一页。</span></div>
+    <div class="exhibit-side"><span>ATANGTANG</span><button class="lb-zoom" type="button" aria-pressed="false">局部细节 ↗</button></div>
+  </div>
+  <div class="lb-caption" aria-live="polite"><span id="lbCount"></span><span id="lbCaptionTitle"></span><span id="lbModeLabel"></span></div>
+  <div id="lbDots" class="lb-dots" aria-label="作品页码"></div>
+</div>
+
+<!-- 作品集 PDF 预览弹窗 -->
+<div id="preview-modal" class="modal" aria-hidden="true">
+  <div class="modal-back"></div>
+  <div class="modal-body preview-body">
+    <button class="modal-close" id="preview-close" aria-label="关闭">×</button>
+    <div class="modal-head"><h3>作品集项目总览</h3><p>点击任意封面查看该项目原图</p></div>
+    <div class="archive-grid" id="preview-grid">
+      <!-- 旧版 PDF 切片目录不随源码包提供；打开预览时由 script.js 用现有项目封面重建。 
+      <img class="a-thumb" src="assets/works/thumbs/p1_00.jpg" data-full="assets/works/full/p1_00.jpg" alt="作品集切片 1" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_01.jpg" data-full="assets/works/full/p1_01.jpg" alt="作品集切片 2" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_02.jpg" data-full="assets/works/full/p1_02.jpg" alt="作品集切片 3" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_03.jpg" data-full="assets/works/full/p1_03.jpg" alt="作品集切片 4" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_04.jpg" data-full="assets/works/full/p1_04.jpg" alt="作品集切片 5" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_05.jpg" data-full="assets/works/full/p1_05.jpg" alt="作品集切片 6" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_06.jpg" data-full="assets/works/full/p1_06.jpg" alt="作品集切片 7" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_07.jpg" data-full="assets/works/full/p1_07.jpg" alt="作品集切片 8" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_08.jpg" data-full="assets/works/full/p1_08.jpg" alt="作品集切片 9" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_09.jpg" data-full="assets/works/full/p1_09.jpg" alt="作品集切片 10" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_10.jpg" data-full="assets/works/full/p1_10.jpg" alt="作品集切片 11" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_11.jpg" data-full="assets/works/full/p1_11.jpg" alt="作品集切片 12" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_12.jpg" data-full="assets/works/full/p1_12.jpg" alt="作品集切片 13" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_13.jpg" data-full="assets/works/full/p1_13.jpg" alt="作品集切片 14" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_14.jpg" data-full="assets/works/full/p1_14.jpg" alt="作品集切片 15" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_15.jpg" data-full="assets/works/full/p1_15.jpg" alt="作品集切片 16" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_16.jpg" data-full="assets/works/full/p1_16.jpg" alt="作品集切片 17" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_17.jpg" data-full="assets/works/full/p1_17.jpg" alt="作品集切片 18" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_18.jpg" data-full="assets/works/full/p1_18.jpg" alt="作品集切片 19" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_19.jpg" data-full="assets/works/full/p1_19.jpg" alt="作品集切片 20" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_20.jpg" data-full="assets/works/full/p1_20.jpg" alt="作品集切片 21" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_21.jpg" data-full="assets/works/full/p1_21.jpg" alt="作品集切片 22" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_22.jpg" data-full="assets/works/full/p1_22.jpg" alt="作品集切片 23" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_23.jpg" data-full="assets/works/full/p1_23.jpg" alt="作品集切片 24" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_24.jpg" data-full="assets/works/full/p1_24.jpg" alt="作品集切片 25" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_25.jpg" data-full="assets/works/full/p1_25.jpg" alt="作品集切片 26" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_26.jpg" data-full="assets/works/full/p1_26.jpg" alt="作品集切片 27" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_27.jpg" data-full="assets/works/full/p1_27.jpg" alt="作品集切片 28" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_28.jpg" data-full="assets/works/full/p1_28.jpg" alt="作品集切片 29" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_29.jpg" data-full="assets/works/full/p1_29.jpg" alt="作品集切片 30" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_30.jpg" data-full="assets/works/full/p1_30.jpg" alt="作品集切片 31" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_31.jpg" data-full="assets/works/full/p1_31.jpg" alt="作品集切片 32" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_32.jpg" data-full="assets/works/full/p1_32.jpg" alt="作品集切片 33" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_33.jpg" data-full="assets/works/full/p1_33.jpg" alt="作品集切片 34" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_34.jpg" data-full="assets/works/full/p1_34.jpg" alt="作品集切片 35" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_35.jpg" data-full="assets/works/full/p1_35.jpg" alt="作品集切片 36" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_36.jpg" data-full="assets/works/full/p1_36.jpg" alt="作品集切片 37" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_37.jpg" data-full="assets/works/full/p1_37.jpg" alt="作品集切片 38" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_38.jpg" data-full="assets/works/full/p1_38.jpg" alt="作品集切片 39" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_39.jpg" data-full="assets/works/full/p1_39.jpg" alt="作品集切片 40" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_40.jpg" data-full="assets/works/full/p1_40.jpg" alt="作品集切片 41" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_41.jpg" data-full="assets/works/full/p1_41.jpg" alt="作品集切片 42" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_42.jpg" data-full="assets/works/full/p1_42.jpg" alt="作品集切片 43" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_43.jpg" data-full="assets/works/full/p1_43.jpg" alt="作品集切片 44" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_44.jpg" data-full="assets/works/full/p1_44.jpg" alt="作品集切片 45" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_45.jpg" data-full="assets/works/full/p1_45.jpg" alt="作品集切片 46" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_46.jpg" data-full="assets/works/full/p1_46.jpg" alt="作品集切片 47" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_47.jpg" data-full="assets/works/full/p1_47.jpg" alt="作品集切片 48" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_48.jpg" data-full="assets/works/full/p1_48.jpg" alt="作品集切片 49" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_49.jpg" data-full="assets/works/full/p1_49.jpg" alt="作品集切片 50" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_50.jpg" data-full="assets/works/full/p1_50.jpg" alt="作品集切片 51" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_51.jpg" data-full="assets/works/full/p1_51.jpg" alt="作品集切片 52" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_52.jpg" data-full="assets/works/full/p1_52.jpg" alt="作品集切片 53" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_53.jpg" data-full="assets/works/full/p1_53.jpg" alt="作品集切片 54" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_54.jpg" data-full="assets/works/full/p1_54.jpg" alt="作品集切片 55" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_55.jpg" data-full="assets/works/full/p1_55.jpg" alt="作品集切片 56" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_56.jpg" data-full="assets/works/full/p1_56.jpg" alt="作品集切片 57" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_57.jpg" data-full="assets/works/full/p1_57.jpg" alt="作品集切片 58" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_58.jpg" data-full="assets/works/full/p1_58.jpg" alt="作品集切片 59" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_59.jpg" data-full="assets/works/full/p1_59.jpg" alt="作品集切片 60" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_60.jpg" data-full="assets/works/full/p1_60.jpg" alt="作品集切片 61" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_61.jpg" data-full="assets/works/full/p1_61.jpg" alt="作品集切片 62" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_62.jpg" data-full="assets/works/full/p1_62.jpg" alt="作品集切片 63" loading="lazy"/>
+      <img class="a-thumb" src="assets/works/thumbs/p1_63.jpg" data-full="assets/works/full/p1_63.jpg" alt="作品集切片 64" loading="lazy"/>
+      -->
+    </div>
+  </div>
+</div>
+
+<!-- Vibe Coding 编辑器：适合网页端、移动端和 HTML 小工具 -->
+<div id="vibe-edit-modal" class="modal" aria-hidden="true">
+  <div class="modal-back"></div>
+  <div class="modal-body vibe-edit-body">
+    <button class="modal-close" id="vibe-edit-close" aria-label="关闭">×</button>
+    <div class="modal-head"><h3>编辑 Vibe Coding 项目</h3><p>改完保存在当前浏览器；部署到国内站点后，把新的体验网址填在这里。</p></div>
+    <div class="edit-form vibe-edit-form">
+      <input type="hidden" id="vibe-edit-slug">
+      <label>项目名称<input type="text" id="vibe-edit-title" placeholder="例如：一城一卷"></label>
+      <label>标签<input type="text" id="vibe-edit-tags" placeholder="例如：移动端 / HTML 小工具"></label>
+      <label>展示类型
+        <select id="vibe-edit-layout">
+          <option value="mobile">移动端 · 竖屏界面</option>
+          <option value="desktop">网页端 · 宽屏界面</option>
+        </select>
+      </label>
+      <label>卡片格式文字<input type="text" id="vibe-edit-format" placeholder="例如：网页端 · HTML"></label>
+      <label>一句话说明<textarea id="vibe-edit-desc" rows="3" placeholder="说明这个小工具解决什么问题、有什么体验"></textarea></label>
+      <label>体验网址<input type="text" id="vibe-edit-url" placeholder="国内部署后的网址，例如 https://example.cn"></label>
+      <label>卡片色调<input type="color" id="vibe-edit-tint" value="#52606a"></label>
+      <div class="vibe-upload-block">
+        <div class="edit-gal-head"><span>页面预览图</span><button type="button" class="cbtn sm" id="vibe-upload-btn">＋ 上传 / 替换</button><input type="file" id="vibe-file" accept="image/*" hidden></div>
+        <div class="vibe-upload-preview" id="vibe-upload-preview"><span>还没有预览图</span></div>
+        <p class="edit-hint">建议上传产品首页截图：移动端用竖屏截图，网页端用宽屏截图。图片只保存在当前浏览器，便于你先整理内容。</p>
+      </div>
+      <div class="edit-actions">
+        <button class="cbtn solid" id="vibe-edit-save">保存到本机</button>
+        <button class="cbtn ghost" id="vibe-edit-reset">恢复默认</button>
+        <button class="cbtn ghost" id="vibe-edit-export">导出配置</button>
+        <button class="cbtn ghost" id="vibe-edit-download">下载预览图</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 编辑模式：单作品编辑器 -->
+<div id="edit-modal" class="modal" aria-hidden="true">
+  <div class="modal-back"></div>
+  <div class="modal-body edit-body">
+    <button class="modal-close" id="edit-close" aria-label="关闭">×</button>
+    <div class="modal-head"><h3>编辑作品</h3><p>改文字、上传图片、删除与排序，改动自动保存在本机</p></div>
+    <div class="edit-form">
+      <input type="hidden" id="edit-idx">
+      <label>标题<input type="text" id="edit-title"></label>
+      <label>分类<input type="text" id="edit-cat" list="edit-cats"></label>
+      <datalist id="edit-cats">
+        <option value="电商"></option><option value="教育"></option><option value="酒店"></option><option value="HMI"></option>
+        <option value="品牌IP"></option><option value="AIGC"></option><option value="独立开发"></option><option value="海报"></option>
+      </datalist>
+      <label>年份<input type="text" id="edit-year"></label>
+      <label>描述<textarea id="edit-desc" rows="2"></textarea></label>
+
+      <div class="edit-gal-block">
+        <div class="edit-gal-head">
+          <span>作品图片（<b id="edit-gal-count">0</b> 张）</span>
+          <button type="button" class="cbtn sm" id="edit-upload-btn">＋ 上传图片</button>
+          <input type="file" id="edit-file" accept="image/*" multiple hidden>
+        </div>
+        <div class="edit-drop" id="edit-drop">把图片拖到这里，或点「＋ 上传图片」选择（可一次选多张）</div>
+        <div class="edit-thumbs" id="edit-thumbs"></div>
+        <p class="edit-hint">拖动缩略图可调整顺序，点右上角 × 删除这张。上传的图片保存在本机浏览器里，刷新页面也不会丢。</p>
+      </div>
+
+      <div class="edit-actions">
+        <button class="cbtn solid" id="edit-save">保存</button>
+        <button class="cbtn ghost" id="edit-export">导出 JSON</button>
+        <button class="cbtn ghost" id="edit-dl-images">下载上传的图</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="pdf-archive.js?v=20260906-complete"></script>
+<script src="script.js?v=20260907-vibe"></script>
+<script src="portrait-works.js?v=20260906-single-poster"></script>
+<script src="seasonal.js"></script>
+<script src="carousel.js?v=20260907-vibe"></script>
+</body>
+</html>
