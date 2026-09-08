@@ -121,15 +121,15 @@ const heroArt = $('#hero-art');
 const ipImg = $('#ipImg');
 const ipBubble = $('#ipBubble');
 const quotes = [
-  '嗨，我是婷婷 ✦',
-  '手要软，标准要硬。',
-  '设计师的浪漫，是把复杂变简单。',
-  '一万小时，从不相信天上掉馅饼。',
-  '温和，但较真。',
-  '自由又自律，才扛得起更多。',
-  '把 AI 接进工作流，爽。',
-  '你点的每一项，都是我剪出来的时间。',
-  '今天也要认真活着呀。'
+  '嗨，我是婷婷 ✦ / Hi, I’m Tangting',
+  '手要软，标准要硬。 / A soft touch, with firm standards.',
+  '设计师的浪漫，是把复杂变简单。 / Design turns complexity into clarity.',
+  '一万小时，从不相信天上掉馅饼。 / Practice beats waiting for inspiration.',
+  '温和，但较真。 / Gentle, but exacting.',
+  '自由又自律，才扛得起更多。 / Freedom grows from self-discipline.',
+  '把 AI 接进工作流，爽。 / AI belongs in a thoughtful workflow.',
+  '你点的每一项，都是我剪出来的时间。 / Every piece holds time shaped by hand.',
+  '今天也要认真活着呀。 / Make today count.'
 ];
 if (heroArt && ipImg) {
   heroArt.addEventListener('click', e => {
@@ -197,7 +197,7 @@ function lbRender() {
   stage.scrollTop = stage.scrollLeft = 0;
   const page = lbList[lbIdx];
   stage.classList.toggle('is-detail', !!page.detail);
-  zoom.textContent = page.detail ? '完整画面 ↙' : '局部细节 ↗'; zoom.setAttribute('aria-pressed', String(!!page.detail));
+  zoom.textContent = page.detail ? '完整画面 / Full View ↙' : '局部细节 / Details ↗'; zoom.setAttribute('aria-pressed', String(!!page.detail));
   $('#lbError').hidden = true;
   lbImg.hidden = false;
   lbImg.onload = () => { lbSetClass(lbImg); stage.classList.toggle('is-wide',lbImg.naturalWidth>lbImg.naturalHeight); };
@@ -206,23 +206,23 @@ function lbRender() {
   lbImg.src = page.src;lbImg.style.background=page.bg || lbWork?.bg || 'transparent';
   lbImg.draggable = false; lbImg.style.objectPosition = page.position || '50% 50%';
   $('#lbEnglish').textContent = lbWork?.english || 'SELECTED PROJECT';
-  $('#lbPageTitle').textContent = page.title || '作品展示';
+  $('#lbPageTitle').textContent = page.title || '作品展示 / Project View';
   $('#lbDescription').textContent = page.description || lbWork?.desc || '';
-  $('#lbConcept').textContent = lbWork?.concept || (lbWork?.aiAssisted ? 'AI 辅助视觉概念 · 非商业委托' : '');
+  $('#lbConcept').textContent = lbWork?.concept || (lbWork?.aiAssisted ? 'AI 辅助视觉概念 · 非商业委托 / AI-assisted visual concept · Non-commercial study' : '');
   lbCount.textContent = single ? '' : (lbIdx + 1) + ' / ' + lbList.length;
   $('.exhibit-label').textContent = single ? 'POSTER / VISUAL NOTES' : 'SELECTED WORK';
-  $('.lb-stage').setAttribute('aria-label',single?'海报放大预览':'作品展示，左右滑动翻页');
+  $('.lb-stage').setAttribute('aria-label',single?'海报放大预览 / Enlarged poster preview':'作品展示，左右滑动翻页 / Swipe to browse the project');
   $('.lb-caption').hidden=single;
   $('.lb-prev').hidden=single;$('.lb-next').hidden=single;
   $('#lbDots').hidden=single;
   const captionTitle=$('#lbCaptionTitle'),modeLabel=$('#lbModeLabel');
   if(captionTitle)captionTitle.textContent=lbMode==='full'?(lbWork?.title||lbTitle.textContent):'';
-  if(modeLabel)modeLabel.textContent=single?'':'原作完整画板 · 左右翻页';
+  if(modeLabel)modeLabel.textContent=single?'':'原作完整画板 · 左右翻页 / Original artboards · Swipe to browse';
   $('.lb-prev').disabled = lbIdx === 0; $('.lb-next').disabled = lbIdx === lbList.length-1;
   const firstDot=Math.max(0,Math.min(lbIdx-3,lbList.length-7));
   $('#lbDots').replaceChildren(...(single?[]:lbList.map((_,i)=>{
     if(i<firstDot || i>=firstDot+7)return null;
-    const b=document.createElement('button'); b.type='button'; b.setAttribute('aria-label','第 '+(i+1)+' 页'); b.setAttribute('aria-current',String(i===lbIdx));
+    const b=document.createElement('button'); b.type='button'; b.setAttribute('aria-label','第 '+(i+1)+' 页 / Page '+(i+1)); b.setAttribute('aria-current',String(i===lbIdx));
     b.addEventListener('click',()=>{lbIdx=i;lbRender();});return b;
   }).filter(Boolean)));
 }
@@ -331,7 +331,7 @@ if (lb) {
   stage.addEventListener('dragstart',e=>e.preventDefault());
   $('.lb-zoom').addEventListener('click', () => {
     const zoomed = $('.lb-stage').classList.toggle('is-detail');
-    $('.lb-zoom').textContent = zoomed ? '完整画面 ↙' : '局部细节 ↗';
+    $('.lb-zoom').textContent = zoomed ? '完整画面 / Full View ↙' : '局部细节 / Details ↗';
     $('.lb-zoom').setAttribute('aria-pressed', String(zoomed));
     $('.lb-stage').scrollTop = 0;
   });
@@ -369,7 +369,7 @@ $$('#worksGrid .work').forEach(card => {
     if (g) {
       try {
         const list = JSON.parse(g);
-        const title = card.querySelector('.meta h3') ? card.querySelector('.meta h3').textContent : '';
+        const title = card.dataset.title || (card.querySelector('.meta h3') ? card.querySelector('.meta h3').textContent : '');
         if (list && list.length) lbOpen(list, 0, title, 'full', card.dataset.slug);
       } catch(e){}
     }
@@ -394,7 +394,7 @@ function renderPreviewGrid() {
     let list = [];
     try { list = JSON.parse(card.dataset.gallery || '[]'); } catch (e) {}
     const cover = card.querySelector('.cover-img');
-    const title = card.querySelector('.meta h3') ? card.querySelector('.meta h3').textContent : '';
+    const title = card.dataset.title || (card.querySelector('.meta h3') ? card.querySelector('.meta h3').textContent : '');
     const img = document.createElement('img');
     img.className = 'a-thumb';
     img.src = cover ? cover.getAttribute('src') : (list[0] || '');
